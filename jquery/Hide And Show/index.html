@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide And Show jQuery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <p class="para">This is a paragraph that will be shown or hidden.</p>
+    <button class="hide">Hide</button>
+    <button class="show">Show</button>
+
+    <script>
+            // Hide the paragraph when the hide button is clicked
+        $(document).ready(function () {
+            $(".hide").click(function () {
+                $(".para").hide();
+            });
+
+            // Show the paragraph when the show button is clicked
+            $(".show").click(function () {
+                $(".para").show();
+            });
+        });
+    </script>
+</body>
+
+</html>

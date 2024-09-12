@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events jQuery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, corrupti impedit totam quaerat
+        reprehenderit voluptatum, iusto fuga nesciunt ipsa est minima esse obcaecati veniam, officia saepe magnam?
+        Repellat, accusantium libero!</p>
+
+    <script>
+            // Click event
+        $(document).ready(function () {
+            $(".para").click(function () {
+                $(this).css("background-color", "yellow");
+            });
+
+            // Double click event
+            $(".para").dblclick(function () {
+                $(this).css("background-color", "green");
+            });
+
+            // Mouse enter event
+            $(".para").mouseenter(function () {
+                $(this).css("background-color", "red");
+            });
+
+            // Mouse leave event
+            $(".para").mouseleave(function () {
+                $(this).css("background-color", "lightgrey");
+            });
+
+
+        });
+    </script>
+
+</body>
+
+</html>
