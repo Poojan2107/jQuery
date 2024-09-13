@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Slide and Fade</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script>
+        $(document).ready(function(){
+            // Slide Up and Slide Down
+            $(".slideButton").click(function(){
+                $("p").slideToggle("slow");
+            });
+
+            // Fade In and Fade Out
+            $(".fadeButton").click(function(){
+                $("p").fadeToggle("slow");
+            });
+        });
+    </script> -->
+</head>
+<body>
+
+    <button class="slide">Slide</button>
+    <button class="fade">Fade</button>
+
+    <p class="para">This is a paragraph that will slide and fade.</p>
+
+
+    <script>
+             // Slide Up and Slide Down
+        $(document).ready(function(){
+            $(".slide").click(function(){
+                $(".para").slideToggle("slow");
+            });
+
+            // Fade In and Fade Out
+            $(".fade").click(function(){
+                $(".para").fadeToggle("slow");
+            });
+        });
+    </script>
+</body>
+</html>
