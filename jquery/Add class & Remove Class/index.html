@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Class & Remove Class</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .hello {
+            background-color: green;
+            border: black 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non quas officiis ipsum nostrum alias eos
+        ut vel odit enim cupiditate?</p>
+    <button class="add">Add Me</button>
+    <button class="remove">Remove Me</button>
+    <button class="toggle">Toggle me</button>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".add").click(function () {
+                $(".para").addClass('hello');
+            })
+        })
+        $(".remove").click(function () {
+            $(".para").removeClass('hello');
+        })
+        $(".toggle").click(function () {
+            $(".para").toggleClass('hello');
+        })
+    </script>
+</body>
+
+</html>
