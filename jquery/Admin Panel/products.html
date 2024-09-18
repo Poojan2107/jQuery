@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Management</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        table thead {
+            background-color: #27ae60;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        table th,
+        table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        button {
+            padding: 8px 15px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1e8449;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="admin-wrapper">
+        <div class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li><a href="./index.html">Dashboard</a></li>
+                <li><a href="./users.html">Users</a></li>
+                <li><a href="./orders.html">Orders</a></li>
+                <li><a href="./products.html" class="active">Products</a></li>
+                <li><a href="./settings.html">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div> -->
+
+        <div class="main-content">
+            <header>
+                <h2>Products Management</h2>
+            </header>
+            <div class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#101</td>
+                            <td>Product A</td>
+                            <td>Electronics</td>
+                            <td>Rs.500</td>
+                            <td>In Stock</td>
+                            <td><button>Edit</button> <button>Delete</button></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
